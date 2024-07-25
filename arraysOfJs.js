@@ -19,6 +19,9 @@ myFriends.unshift("Tata") // will add the value present at the end of the array.
 console.log(myFriends.includes("Ambani")); // includes method returns boolean value, checks it an array has that element or not.
 console.log(myFriends.indexOf("Jeff")); // indexOf method returns index of mentioned element.
 
+let newFriends = myFriends.join() // will add all the elements into a string. ex: Tata,Jeff,Elon,Mark,Bill
+console.log(newFriends); //datatype will also change to strings
+
 // Difference of Slice and Splice
 
 let myNum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
