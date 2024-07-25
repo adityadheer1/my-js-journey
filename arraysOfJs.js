@@ -16,6 +16,8 @@ myFriends.shift() // will remove the value present in the beginning of the array
 myFriends.unshift("Tata") // will add the value present at the end of the array.
 // console.log(myFriends);
 
+console.log(myFriends.includes("Ambani")); // includes method returns boolean value, checks it an array has that element or not.
+console.log(myFriends.indexOf("Jeff")); // indexOf method returns index of mentioned element.
 
 // Difference of Slice and Splice
 
