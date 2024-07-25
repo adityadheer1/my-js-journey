@@ -47,3 +47,9 @@ let dcHeros =  ["Superman", "Batman", "Flash"]
 // spread method
 let together = [ ...marvelHeros, ...dcHeros]
 console.log(together); // Will return same as concate but it is more simple to execute.
+
+const nestedArray = [1, 2, 3 ,[4, 5, [7, 8, 9], 6 ]]
+// to convert a nested array into a single array we can use Flat method.
+const unNestedArray = nestedArray.flat(Infinity)
+console.log(unNestedArray);
+
