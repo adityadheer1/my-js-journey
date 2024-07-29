@@ -58,3 +58,14 @@ let obj03 = Object.assign({}, obj01, obj02)
 
 
 // OBJECTS DECONSTRUCTION
+const course = {
+    courseName: "JavaScript",
+    price: "999"
+}
+
+// console.log(course.courseName);
+
+const {courseName: Naam} = course
+console.log(Naam);
+
+
