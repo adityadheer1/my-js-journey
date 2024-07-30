@@ -26,7 +26,7 @@
 // }
 
 console.log(addtwo(5));
-const addtwo = function(num){ // trying to define function this way will call an error if we call function before defining.
+const addtwo = function(num){ // trying to define function as an expression where a variable holds the function, this way will call an error if we call function before defining.
     return num + 2
 }
 
