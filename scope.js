@@ -1,3 +1,5 @@
+// Scopes work with Functions and conditionals
+
 // if (true) {
 //     // let a = 10
 //     // const b = 20 // BLOCK SCOPE and anything outside this block is GLOBAL SCOPE
