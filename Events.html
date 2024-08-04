@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <div>
+        <h2>Photos</h2>
+        <ul id="images">
+            <li><img id="bike" src="https://images.pexels.com/photos/2948297/pexels-photo-2948297.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="150px" height="150px" ></li>
+            <li><img id="lake" src="https://images.pexels.com/photos/16821529/pexels-photo-16821529/free-photo-of-ostrowskie.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="150px" height="150px"></li>
+            <li><img id="trap" src="https://images.pexels.com/photos/4997336/pexels-photo-4997336.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="150px" height="150px" ></li>
+        </ul>
+        <a id="anchor" href="https://www.google.com/">google</a>
+
+    </div>
+</body>
+<script>
+    // document.getElementById('bike').onclick = function(){
+        // alert('Clicked on a bike')
+    // }
+    // document.getElementById('bike').addEventListener('click', function(e){
+    //     console.log(e);
+    // }, false)
+    // READ ABOUT THESE EVENTS - type, timestamp, defaultPrevented, target, toElement, srcElement,currentTarget
+    //Interview based - clientX, clientY, screenX, screenY
+
+    document.getElementById('images').addEventListener('click', function(e){
+        console.log('You have clicked an image');
+    }, false)  
+
+    document.getElementById('bike').addEventListener('click', function(e){
+        console.log('You have clicked an image of Bike');
+        e.stopPropagation()
+    }, false)  //EVENT PROPOGATION (FALSE)- BUBBLING -> GOING UP in motion || EVENT PROPOGATION (TRUE)- CAPTURING -> GOING DOWN in motion 
+    document.getElementById('anchor').addEventListener('click', function(e){
+        e.preventDefault()
+        console.log("google clicked");
+        
+    })
+</script>
+</html>
