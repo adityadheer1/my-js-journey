@@ -1,8 +1,9 @@
 let myName = "Aditya" //String
-let age = 11 //Number
+let age = 11 //Number or bigint
 let isLoggedIn = true //Boolean
 
-console.table(typeof myName);
-console.table(typeof age);
-console.table(typeof isLoggedIn);
+console.log(typeof myName);
+console.log(typeof age);
+console.log(typeof isLoggedIn);
 
+// Null is a datatype and a stand alone value as well
