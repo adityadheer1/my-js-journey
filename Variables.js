@@ -8,4 +8,4 @@ custEmail = "customer@yahoo.com"
 custPassword = "123abc"
 custCity = "Mumbai"
 
-console.table([custmId, custEmail, custPassword, custCity]) // console.table will view all the params in a tabular structure.
+console.table([custmId, custEmail, custPassword, custCity]) // console.table will view all the values in a tabular structure.
