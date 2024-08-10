@@ -4,10 +4,12 @@ let score = "33"
 let newScore = Number(score) // converted string 33 to Number 33
 // console.log(typeof newScore); 
 
-let loggedIn = "yes"
+let loggedIn = "yes"// output is type as string
 
 let newLoggedIn = Boolean(loggedIn)
-console.log(newLoggedIn);
+// console.log(newLoggedIn);
+
+console.log(typeof loggedIn);
 
 /*
 In Boolean
