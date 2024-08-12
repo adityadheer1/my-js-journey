@@ -6,28 +6,30 @@ const user = {
         console.log(`${this.username}, welcome to the website`); // "THIS" keyword refer to the current context. 
     }
 }
+user.welcomeMessage()
 
-// user.welcomeMessage()
+//************************** THIS keyword only works in object.********************************
 
-// THIS keyword only works in object.
+function chai() {
+    let username = "Aditya"
+    console.log(this.username);
+}
+chai()
 
-// function chai() {
-//     let username = "Aditya"
-//     console.log(this.username);
-// }
-// chai()
+// *****************************************ARROW FUNCTION**************************************
 
-// ARROW FUNCTION
+const addTwo = (num) => {
+    return num + 2
+}
 
-// const addTwo = (num) => {
-//     return num + 2
-// }
-
-// console.log(addTwo(5));
+console.log(addTwo(5));
 
 // IMPLICIT RETURN
-// const addTwo = (num) =>  num + 2 // in implicit we assume that you need to return the outcome.
+const addTwo = (num) =>  num + 2 // in implicit we assume that you need to return the outcome.
 // another way is to wrap in prenthesis
 const addTwo = (num) =>  (num + 2) // we wrap in curly braces then we have to use RETURN keyword, Otherwise not
 
+// In order to return a function with arrow function, we need to add prenthesis. For example
 
+// const mango = (fruit) =>  {fruit : "Mango"} // this will give an output of Undefined
+const mango = (fruit) =>  ({fruit : "Mango"})
