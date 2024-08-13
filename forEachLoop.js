@@ -36,3 +36,4 @@ const evenNum = [2, 4, 6, 8, 10]
 
 const saveThisForMe = evenNum.filter( (num) => num > 4 )
 console.log(saveThisForMe);
+
